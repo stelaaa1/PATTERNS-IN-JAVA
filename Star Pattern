@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		  int n=sc.nextInt();
+        
+        	int currrow=1;
+        while(currrow<=n)
+        {
+            int spaces=1;
+            while(spaces<=(n-currrow))
+            {
+                System.out.print(" ");
+                spaces+= 1;
+            }
+            int currcol=1;
+            while(currcol<=(2*currrow)-1)
+            {
+                System.out.print("*");
+                currcol+=1;
+            }
+            System.out.println();
+            currrow+=1;
+        }
+    }
+}
