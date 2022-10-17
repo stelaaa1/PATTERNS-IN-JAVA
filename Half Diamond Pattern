@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class Solution {
+    
+    public static void main(String[] args) {
+        Scanner sc =new Scanner (System.in);
+        
+        int n=sc.nextInt();
+        
+        int i=0;
+        System.out.println("*");
+        while(++i<=n)
+        {
+          int j=0;
+            { System.out.print("*");
+        }
+            while(++j<=i)
+            {
+                System.out.print(j);
+            }
+            j=i-1+1;
+            while(--j>=1)
+            {
+                System.out.print(j);
+            }
+            System.out.print("*");
+            System.out.println();
+        }
+        i=0;
+        while(++i<=n-1)
+        {
+            System.out.print("*");
+            int j=0;
+            while(++j<=n-i)
+            {
+                System.out.print(j);
+            }
+            j=n-i;
+            while(--j>=1)
+            {
+                 System.out.print(j);
+            }
+                System.out.print("*");
+                System.out.println();
+            }
+            System.out.println("*");
+        }
+    
+}
+       
