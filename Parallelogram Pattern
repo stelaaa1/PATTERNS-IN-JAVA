@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.lang.Math;
+public class Main{
+    public static void main(String []args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int i=1;
+        {
+            while(i<=a)
+            {
+                int spaces=a-i;
+                while(spaces<=a-2)
+                {
+                    System.out.print(" ");
+                    spaces=spaces+1;
+                }
+                {
+                    for(int j=0;j<a;j++)
+                    {
+                        System.out.print("*");
+                    }
+                }
+                System.out.println();
+                    i=i+1;
+            }
+        }
+    }
+}
